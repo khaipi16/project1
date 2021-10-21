@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reimbursement Portal</title>
+<link rel="stylesheet" href="./css/tablesCSS/stylePendingTable.css">
+<!-- <link rel="stylesheet" href="./css/managerCSS/viewpending.css">
+ -->
+ 
+    <link href="./css/indexCSS/main.css" rel="stylesheet">
+    <link href="./css/indexCSS/indexAnimate.min.css" rel="stylesheet">
+    <link href="./css/indexCSS/indexBootstrap.min.css" rel="stylesheet">
+    <link href ="./css/indexCSS/indexBoxicons.css" rel = "stylesheet">
+    <link href ="./css/indexCSS/indexGlightbox.css" rel = "stylesheet">
+    <link href ="./css/indexCSS/indexRemixicon.css" rel = "stylesheet">
+    <link href ="./css/indexCSS/indexSwiper.min.css" rel = "stylesheeet">
+    <link href ="./css/indexCSS/bootstrap-icons.css" rel = "stylesheet">
+       
+    <script src = "logOut.js"></script>
+    
+    
+<script src = "HandlingTIckets.js"></script>
+<link rel="shortcut icon" href="#">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!------ Include the above in your HEAD tag ---------->
+    
+                  
+  <li><button onclick = "logOut()" type="button"  >Log Out</button></li>
+  <li><a href="managerHome.html">Manager Home</a></li>
+                            
+             
+<h1>Expense Reimbursement Summary</h1>
+ 
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+            <div class="input-group" id="adv-search">
+                <input type="text" id = "username" class="form-control" placeholder="Search by username" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="filter">Filter by</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Snippets</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Author</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Contains the words</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick = "searchTicket()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+	</div>
+</div>
+
+
+<!--     <form>
+      <div class="input-row">
+        <label for="ticketID">Ticket ID</label>
+        <input type="number" name="url" id="ID" />
+      </div>
+      <div class="input-row">
+        <label for="website">We</label>
+        <input type="text" name="website" id="website" />
+      </div>
+      <button>Submit</button>
+    </form> -->
+    <table>
+      <thead id = "tHead">
+  <!--       <tr>
+          <th>Ticket ID</th>
+          <th>Author</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Submitted</th>
+           <th>Status</th>
+           <th id = "decide">Decision</th>
+           
+        </tr> -->
+      </thead>
+      <tbody id = "tBody">
+      	
+      </tbody>
+    </table>
+    <button type="button" onclick="viewTickets()" >View Pending</button>
+   
+    
+</body>
+
+</html>

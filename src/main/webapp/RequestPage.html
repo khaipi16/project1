@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reimbursement Request Form</title>
+    <link rel="stylesheet" href="./css/employeeCSS/styleRequest.css">
+    <link rel="stylesheet" href="./css/employeeCSS/requestpage.css">
+    
+   <script src="Ticket.js"></script>
+   <script src="logOut.js"></script>
+    <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+</head>
+
+<body> 
+ <!-- Navigation Bar -->
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+ 
+  <div class="collapse navbar-collapse" id="resNav">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>  End of Navigation Bar -->
+ 	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class=" navbar-nav navbar-right">
+                    <li><a href="employeeHome.html">Employee Home</a></li>
+                </ul>
+                     <ul class="nav navbar-nav navbar-right">           
+                    <li><a href="#" onclick="logOut()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <h1>Reimbursement Request Form</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <label for="type"  required>Type:</label>
+            </div>
+            <div class="col-90">
+                <select name="type" id="type">
+                        <option value=" ">Select Type:</option>
+                        <option value="food">FOOD</option>
+                        <option value="lodging.">LODGING.</option>
+                        <option value="travel.">TRAVEL.</option>
+                        <option value="other">OTHER</option>
+                    </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="amount">Amount:</label>
+            </div>
+            <div class="col-90">
+                <input type="number" id="amount" name="amount" maxlength="8" min="1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="address">Description:</label>
+            </div>
+            <div class="col-90">
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Write your description here"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="button" value="Submit" onclick="createTicket()">
+        </div>
+    </div>
+</body>
+
+</html>

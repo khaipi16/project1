@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Expense Reimbursement Form Page</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href = "./css/indexCSS/indexBootStrapIcon.css" rel = "stylesheet">
+    
+    
+   
+
+    <!-- Template Main CSS File -->
+    <link href="./css/indexCSS/main.css" rel="stylesheet">
+    <link href="./css/indexCSS/indexAnimate.min.css" rel="stylesheet">
+    <link href="./css/indexCSS/indexBootstrap.min.css" rel="stylesheet">
+<!--     <link href ="./css/indexCSS/indexBoxicons.css" rel = "stylesheet">
+ --><!--     <link href ="./css/indexCSS/indexGlightbox.css" rel = "stylesheet">
+ -->    <<!-- link --> href ="./css/indexCSS/indexRemixicon.css" rel = "stylesheet">
+<!--     <link href ="./css/indexCSS/indexSwiper.min.css" rel = "stylesheeet">
+ --><!--     <link href ="./css/indexCSS/bootstrap-icons.css" rel = "stylesheet"> 
+ -->       
+    
+    <script src = "HandlingTIckets.js"></script>
+    <script src = "logOut.js"></script>
+    <script src = "viewEmployeeTickets.js"></script>
+    
+    
+    
+    
+    
+    
+        
+    <!-- =======================================================
+  * Template Name: Sailor - v4.5.0
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">Employee Reimbursement Portal</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li class="dropdown"><a href="#"><span>Get Started</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="RequestPage.html">Submit A Request </a></li>
+                            <li><a href = "viewEmployeeTickets.html" type = "button">View Reimbursements</a></li>
+                            <li><a href="viewAccount.html">View Account Info</a></li>
+                            <li><button onclick = "logOut()" type="button"  >Log Out</button></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(https://hateandanger.files.wordpress.com/2012/06/i-am-a-piece-of-paper-i-control-your-life.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown"><span>How To Submit a Request Reimbursement</span></h2>
+                            <p class="animate__animated animate__fadeInUp">Just hover your mouse over the top right on "Get Started", and under that drop-down menu, click on the "Submit A Request".</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(https://previews.123rf.com/images/bsd555/bsd5552005/bsd555200501142/147208316-reward-your-curiosity-concept-icon.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Want To See All Your Request and Resolved Reimbursements? </h2>
+                            <p class="animate__animated animate__fadeInUp">Just hover your mouse over the top right that says "Get Started", and under that drop-down menu, click on the "View Reimbursements".</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>      
+                         <!-- Slide 4 -->
+                <div class="carousel-item" style="background-image: url(https://strivelifedesign.com/wp-content/uploads/2019/08/htky.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Want An Overview of Your Account Information?</h2>
+                            <p class="animate__animated animate__fadeInUp">Just hover your mouse over the top right that says "Get Started", and under that drop-down menu, click on the "View Account Info".</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Expense Reimbursement</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
+                Designed by <a href="https://bootstrapmade.com/">Khai</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+<!--     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="indexBootStrap.js"></script> -->
+
+    <!-- Template Main JS File -->
+</body>
+
+</html>
